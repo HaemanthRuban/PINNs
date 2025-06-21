@@ -1,1 +1,1 @@
-# PINNs
+# PINNs - Physics Informed Neural Networks
