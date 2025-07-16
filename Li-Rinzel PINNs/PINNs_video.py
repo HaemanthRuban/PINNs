@@ -105,7 +105,7 @@ v2 = torch.nn.Parameter(torch.rand(1, requires_grad=True))
 a2 = torch.nn.Parameter(torch.rand(1, requires_grad=True))
 lam1, lam2, lam3 = 1e-2, 1, 1e-2
 optimiser = torch.optim.Adam(list(pinn.parameters()) + [v2, a2], lr=0.001)
-epochs =  10001
+epochs =  5001
 v2s = []
 a2s = []
 Ca_predict = []
@@ -251,6 +251,7 @@ def animate(i):
 plt.tight_layout()
 
 animation = FuncAnimation(fig, animate, frames=100, interval=0.1)
-animation.save("Li-Rinzel PINNs/Videos/time_100_PINN.gif")
+# animation.save("Li-Rinzel PINNs/Videos/time_100_PINN.gif")
+plt.show()
 
 
